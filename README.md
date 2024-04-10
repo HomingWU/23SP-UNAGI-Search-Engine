@@ -1,4 +1,4 @@
-# 23sp-CIS5550-Team-unagi
+# 23SP-UNAGI-Search-Engine
 
 ## Compiling:
 ```bash
