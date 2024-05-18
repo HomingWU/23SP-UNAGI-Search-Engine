@@ -1,4 +1,8 @@
 # 23SP-UNAGI-Search-Engine
+- A Google-style search engine, building entirely from scratch using Java.
+- Including components that a modern search engine would use: a web server, a key-value store, an analytics engine, a crawler, an indexer and PageRank, and a simple frontend.
+- Group project of 4. I am responsible for providing all the components above and deployment on the Amazon EC2. One teammate was responsible for fine-tuning the crawler and babysitting the crawling process,
+  one responsible for data processing using the analytics engine, and the last one responsible for tuning the ranking.
 
 ## Compiling:
 ```bash
