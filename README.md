@@ -4,6 +4,16 @@
 - Group project of 4. I am responsible for providing all the components above and deployment on the Amazon EC2. One teammate was responsible for fine-tuning the crawler and babysitting the crawling process,
   one responsible for data processing using the analytics engine, and the last one responsible for tuning the ranking.
 
+## 1. Web Server
+- An API that is based on the API from Spark Framework, a real-world framework creating web applications in Java.
+- The web server supports dynamic content and routes as well as static files from a given directory.
+- Key features: ***Concurrency, Security, Server API, Route API, Error handling, HTTPS support, Sessions, Session expiration.***
+
+## 2. Key-Value Store
+- A ***distributed*** key-value store with an in-memory/persistence option.
+- Sharded across multiple worker nodes via consistent hashing, coordinated by a master node tracking active workers and managing system membership, with communication via HTTP.
+- Key features: ***In-memory storage, Persistent tables with on-disk storage, Recovery,  Streaming read, Streaming write, Rename, Delete, User interface.***
+  
 ## Compiling:
 ```bash
 Ranking: javac --source-path src src/cis5550/ranking/Ranking.java
