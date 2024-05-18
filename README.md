@@ -13,6 +13,21 @@
 - A ***distributed*** key-value store with an in-memory/persistence option.
 - Sharded across multiple worker nodes via consistent hashing, coordinated by a master node tracking active workers and managing system membership, with communication via HTTP.
 - Key features: ***In-memory storage, Persistent tables with on-disk storage, Recovery,  Streaming read, Streaming write, Rename, Delete, User interface.***
+
+## 3. Analytics Engine
+- A ***distributed*** analytics engine that is loosely based on Apache Spark that can work with large data sets that are spread across several nodes(RDDs).
+- Support basic operations, such as flatMap, fold, and join, to normal RDDs and Pair RDDs. 
+- Key features: ***Job submission, Parallelism, Encoding, User interface***
+
+## 4. Distributed Web Crawler
+- A ***distributed*** web crawler, based on the analytics engine and KVS.
+- The crawler can follow redirects, and comply with robot exclusion protocol and craw delay policy.
+- Key features: ***Robot exclusion protocol, User agent string, Crawl-delay, URL extraction and normalization, URL filtering, Redirect handling.***
+
+## 5. Indexer and PageRank
+- An indexer can build an inverted index that maps each word to a list of pages that contains it.
+- The implementation of the PageRank algorithm extracts the link graph from the crawled pages and runs the algorithm on that graph.
+- Key features: ***Word positions, Convergence criterion, Stemming***
   
 ## Compiling:
 ```bash
